@@ -103,7 +103,7 @@ export default {
                     name: 'Bootstrap',
                     version: 4,
                     img: 'https://www.seeklogo.net/wp-content/uploads/2016/06/bootstrap-logo-vector-download.jpg',
-                    desc: 'Framework facilitant la mise en forme'
+                    desc: 'Framework CSS facilitant la mise en forme'
                 },
                 {
                     class: 'react fab fa-react',                
@@ -135,28 +135,28 @@ export default {
                     name: 'Git',
                     img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/768px-Git_icon.svg.png',
                     // version: 4,
-                    desc: 'pour versionner ses codes'
+                    desc: 'Application servant à versionner ses codes'
                 },
                 {
                     class: 'gh fab fa-github',                
                     name: 'gitHub',
                     img: 'http://pngimg.com/uploads/github/github_PNG40.png',
                     // version: 1.22,
-                    desc: 'Le cloud des codeurs'
+                    desc: 'Le cloud des codeurs, basé sur git'
                 },
                 {
                     class: 'sass fab fa-sass',                
                     name: 'Sass',
                     version: 1.22,
                     img: 'http://maddesigns.de/rwd-sass-compass/img/sass-logo-new.png',
-                    desc: 'Framework facilitant encore plus la mise en forme'
+                    desc: 'Framework servant à la personnalisation CSS'
                 },
                 {
                     class: 'js fab fa-python',                
                     name: 'Python',
                     version: 3,
                     img: 'https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/267_Python_logo-512.png',
-                    desc: 'Langage de POO'
+                    desc: 'Langage de programmation, plébiscité en Big Data et Machine Learning'
                 },
                 // {
                 //     class: 'vue fab fa-vuejs',                
@@ -194,7 +194,7 @@ img{
     border: 1px solid turquoise;
 }
 .card:hover {
-    transform: scale(1.175);
+    transform: scale(1.15);
     transition: all 0.25s ease-in-out !important;
     cursor: pointer;
 }
