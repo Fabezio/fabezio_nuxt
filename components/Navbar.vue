@@ -151,10 +151,10 @@ export default {
     }
   },
   computed: {
-    isActive() {
-      return this.isActive = this.active
-    },
-    },
+    // isActive() {
+    //   return this.isActive = this.active
+    // },
+  },
   methods: {
     userbtn() {
       
