@@ -1,15 +1,27 @@
 
 export default {
-  mode: 'spa',
+  mode: 'universal',
+  
   /*
   ** Headers of the page
   */
-  head: {
-    title: process.env.npm_package_name || '',
+ head: {
+   title: process.env.npm_package_name || '',
+   bodyAttr: {
+     class: 'has-navbar-fixed-top has-navbar-fixed-bottom'
+    },
+    script: [
+      {
+        src: 'https://kit.fontawesome.com/347214cdeb.js'
+        
+      }
+    ],
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
+      {
+      },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -18,14 +30,17 @@ export default {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
-  /*
-  ** Global CSS
-  */
-  css: [
-  ],
-  /*
-  ** Plugins to load before mounting the App
+ loading: { color: '#fff' },
+ /*
+ ** Global CSS
+ */
+css: [
+],
+env: {
+  baseUrl: process.env.BASE_URL || 'https://localhost:3000',
+},
+/*
+** Plugins to load before mounting the App
   */
   plugins: [
   ],
@@ -39,7 +54,7 @@ export default {
   */
   modules: [
     // Doc: https://github.com/nuxt-community/modules/tree/master/packages/bulma
-    '@nuxtjs/bulma',
+    'bootstrap-vue/nuxt',
 
   ],
   /*
@@ -58,5 +73,6 @@ export default {
     */
     extend(config, ctx) {
     }
-  }
+  },
+  
 }
