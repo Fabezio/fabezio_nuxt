@@ -1,25 +1,40 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark text-uppercase text-monospace nav-pills m-0 py-1 px-2 fixed-top"
+    >
       <nuxt-link class="navbar-brand" to="/">
-        <img src="@/assets/favicon-32.png" class="logo" style="height: 32px" alt="logo" title="logo">
+        <img
+          src="@/assets/favicon-32.png"
+          class="logo"
+          style="height: 32px"
+          alt="logo"
+          title="logo"
+        />
         fabezio.fr
       </nuxt-link>
-      
-      <button class="navbar-toggler" @click="toggleNavbar" id="menuButton" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"   ></span>
+
+      <button
+        class="navbar-toggler"
+        id="menuButton"
+        type="button"
+        @click="toggleNavbar"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" :class="{'show':collapse}" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto text-center"  >
-          <li class="nav-item" v-for="link in links" :key="link.route">
-          <nuxt-link class="nav-link" :to="link.route">
-              <i :class="link.icon" class="mr-1" > </i>
-            
-            {{link.name}}
-
-          </nuxt-link>
-
+        <ul class="navbar-nav mr-auto text-center px-1">
+          <li class="nav-item nav-pill" v-for="link in links" :key="link.route">
+            <nuxt-link class="nav-link" :to="link.route">
+              <i :class="link.icon" class="mr-1"></i>
+              <span class="route">{{link.name}}</span>
+            </nuxt-link>
           </li>
           <!-- <li class="nav-item active">
 
@@ -27,18 +42,33 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
-          </li> -->
+          </li>-->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" @click="displayDropdown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a
+              class="nav-link dropdown-toggle"
+              @click="displayDropdown"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <i class="fas fa-plus mr-1"></i>
               Autres
             </a>
             <div class="dropdown-menu" :class="{'show': dropdown}" aria-labelledby="navbarDropdown">
-              <nuxt-link class="dropdown-item" to="/about"><i class="fas fa-comment-alt mr-1"> </i> Qui je suis</nuxt-link>
-              <nuxt-link class="dropdown-item" to="/contact"><i class="fas fa-envelope mr-1"> </i> Contactez-moi</nuxt-link>
-              <a class="dropdown-item" href="https://github.com/Fabezio/fabezio_nuxt">
-              <hr class="my-1">
-              <i class="fab fa-github mr-1"> </i>
-              Mon code source</a>
+              <nuxt-link class="dropdown-item" to="/about">
+                <i class="fas fa-comment-alt mr-1"></i> Qui je suis
+              </nuxt-link>
+              <nuxt-link class="dropdown-item" to="/contact">
+                <i class="fas fa-envelope mr-1"></i> Contactez-moi
+              </nuxt-link>
+              <a class="dropdown-item" href="https://github.com/Fabezio/fabezio_nuxt" target="_blank">
+                <hr class="my-1" />
+                <i class="fab fa-github mr-1"></i>
+                Mon code source
+              </a>
               <!--
                 
               <nuxt-link class="dropdown-item" to="/map">Plan du Site</nuxt-link>
@@ -46,15 +76,14 @@
               <nuxt-link class="dropdown-item" to="/faq">Foire aux Questions</nuxt-link>
               <nuxt-link class="dropdown-item" to="/cgu">Conditions</nuxt-link>
               -->
-              
             </div>
           </li>
           <li class="nav-item">
             <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
           </li>
         </ul>
-        <form class="form-inline my-2 ">
-        <!-- <div class="" v-for="log in logs" :key="log.name" > 
+        <form class="form-inline my-2">
+          <!-- <div class="" v-for="log in logs" :key="log.name" > 
           <button class="ml-2" :class="log.color"><i :class="log.icon"> </i> {{log.name}}</button>
         </div>
           <a v-show="true" @click="toggleSignUser" :class="{'show': signUser}" id="signup" role="button" class="btn btn-info">
@@ -68,23 +97,21 @@
           <a id="logout" @click="toggleLogUser" :class="{'show': logUser}" role="button" class="btn btn-warning">
               <i class="fas fa-sign-out-alt"> </i>
             Déconnexion</a>
-         -->
+          -->
 
           <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
           <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
         </form>
       </div>
     </nav>
-
-    
   </div>
 </template>
 
 <script>
-  // const menu = document.getElementById('navbarSupportedContent')
-  // const button = document.getElementById('menuButton')
-  // const dropdown = document.getElementById('navbarDropdown')
-  // const menu = document.getElementById('navbarSupportedContent')
+// const menu = document.getElementById('navbarSupportedContent')
+// const button = document.getElementById('menuButton')
+// const dropdown = document.getElementById('navbarDropdown')
+// const menu = document.getElementById('navbarSupportedContent')
 export default {
   name: "Navbar",
   data() {
@@ -95,95 +122,85 @@ export default {
       logUser: false,
       links: [
         {
-          route: '/',
-          name: 'Accueil',
-          icon: 'fas fa-home'
+          route: "/",
+          name: "Accueil",
+          icon: "fas fa-home"
         },
         {
-          route: '/services',
-          name: 'Services',
-          icon: 'fas fa-user-tie'
+          route: "/services",
+          name: "Services",
+          icon: "fas fa-user-tie"
         },
         {
-          route: '/skills',
-          name: 'Compétences',
-          icon: 'fas fa-user-graduate'
+          route: "/skills",
+          name: "Compétences",
+          icon: "fas fa-user-graduate"
         },
         {
-          route: '/portfolio',
-          name: 'Portfolio',
-          icon: 'fas fa-images'
+          route: "/portfolio",
+          name: "Portfolio",
+          icon: "fas fa-images"
         },
         {
-          route: '/contact',
-          name: 'Contactez-moi',
-          icon: 'fas fa-envelope'
+          route: "/contact",
+          name: "Contactez-moi",
+          icon: "fas fa-envelope"
         },
         {
-          route: '/about',
-          name: 'A propos',
-          icon: 'fas fa-comment-alt'
-        },
+          route: "/about",
+          name: "A propos",
+          icon: "fas fa-comment-alt"
+        }
       ],
-      dropdownLinks : [
+      dropdownLinks: [
         {
-          route: '',
-          name: '',
-          icon: ''
+          route: "",
+          name: "",
+          icon: ""
         }
       ],
       logs: [
         {
-          name: 'subscribe',
-          color: 'btn btn-info',
+          name: "subscribe",
+          color: "btn btn-info",
           name: "Inscription",
-          icon: 'fas fa-user-plus',
+          icon: "fas fa-user-plus",
           show: true
-
         },
         {
-          name: 'login',
-          color: 'btn btn-primary',
+          name: "login",
+          color: "btn btn-primary",
           name: "Connexion",
-          icon: 'fas fa-sign-in-alt',
+          icon: "fas fa-sign-in-alt",
           show: true
-
         },
         {
-          name: 'logout',
-          color: 'btn btn-warning',
+          name: "logout",
+          color: "btn btn-warning",
           name: "Déconnexion",
-          icon: 'fas fa-sign-out-alt',
+          icon: "fas fa-sign-out-alt",
           show: true
-
-        },
+        }
       ]
-    }
+    };
   },
   methods: {
     toggleNavbar() {
-      this.collapse = !this.collapse
-      
+      this.collapse = !this.collapse;
     },
     toggleSignUser() {
-      this.signUser = !this.signUser
-      
+      this.signUser = !this.signUser;
     },
     toggleLogUser() {
-      this.logUser = !this.logUser
-      
+      this.logUser = !this.logUser;
     },
     displayDropdown() {
-      this.dropdown = !this.dropdown
-      
+      this.dropdown = !this.dropdown;
     },
-  
-    userbtn() {
-      
 
-    },
+    userbtn() {},
     isActive() {
-      this.links = 'active'
+      this.links = "active";
     }
   }
 };
