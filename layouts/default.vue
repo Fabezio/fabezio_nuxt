@@ -82,7 +82,9 @@ background: rgba (0,0,0,0.25) !important;
   text-decoration: white underline !important;
 }
 
-
+.nuxt-link-exact-active .fa-circle {
+  color: white;
+}
 
 .nuxt-link-exact-active:not(.home) {
   background: #008080 !important;

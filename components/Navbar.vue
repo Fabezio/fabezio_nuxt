@@ -45,7 +45,7 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
           </li>-->
-          <li class="nav-item dropdown">
+          <!-- <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
               @click="displayDropdown"
@@ -74,7 +74,7 @@
               <hr class="my-1" />
               
             </div>
-          </li>
+          </li> -->
         </ul>
         <form class="form-inline my-2">
           <!-- <div class="" v-for="log in logs" :key="log.name" > 
@@ -139,9 +139,7 @@ export default {
           route: "/portfolio",
           name: "portfolio",
           icon: "fas fa-images"
-        }
-      ],
-      dropdownLinks: [
+        },
         {
           route: "/contact",
           name: "contactez-moi",
@@ -152,6 +150,8 @@ export default {
           name: "à propos",
           icon: "fas fa-comment-alt"
         }
+      ],
+      dropdownLinks: [
       ],
       logs: [
         {
