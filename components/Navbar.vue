@@ -1,7 +1,7 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-capitalize nav-pills fixed-top">
-      <nuxt-link class="navbar-brand home"  to="/">
+    <nav class="navbar navbar-expand-lg navbar-light bg-green text-capitalize nav-pills fixed-top">
+      <nuxt-link class="navbar-brand home btn btn-warning" to="/">
         <img
           src="@/assets/favicon-32.png"
           class="logo"
@@ -195,7 +195,16 @@ export default {
     userbtn() {},
     isActive() {
       this.links = "active";
+    },
+    brandToHelp() {
+      return this.$router.push('/help')
     }
   }
 };
-</script>
+</script >
+
+<style >
+  .navbar-brand {
+    text-shadow: .5px .5px black;
+  }
+</style>

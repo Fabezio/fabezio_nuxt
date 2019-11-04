@@ -28,6 +28,7 @@ export default {
 </script>
 
 <style >
+.bg-green {background: #50c878;}
 .far, .fas {
   margin: 0 !important;
 }
@@ -75,11 +76,11 @@ background: rgba (0,0,0,0.25) !important;
   padding: 7px;
 }
 .route{
-  color: silver !important;
+  /* color: silver !important; */
 
 }
 .route:hover {
-  text-decoration: white underline !important;
+  text-decoration: darkslategrey underline !important;
 }
 
 .nuxt-link-exact-active .fa-circle {

@@ -1,11 +1,11 @@
 <template>
   <div class>
-    <footer class="d-block mx-auto mt-5 pt-2 pb-5 bg-dark">
-      <p class="text-center text-light">
+    <footer class="d-block mx-auto mt-5 pt-2 pb-5 bg-green text-dark">
+      <p class="text-center ">
         Tous droits réservés - fabezio.fr
         <span>&copy;</span> 2019
       </p>
-      <nav class="navbar navbar-expand-lg justify-content-center navbar-dark bg-dark text-capitalize nav-pills">
+      <nav class="navbar navbar-expand-lg justify-content-center navbar-light text-capitalize nav-pills">
       <ul class="navbar-nav  ">
         <li class="nav-item" v-for="link in links" :key="link.route">
           <nuxt-link class="nav-link" :to="link.route">
