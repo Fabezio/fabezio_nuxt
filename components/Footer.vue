@@ -1,33 +1,31 @@
 <template>
   <div class>
-    <footer class=" d-block mx-auto mt-5 pt-2 pb-5 bg-dark">
-      <p class="text-center">
+    <footer class="d-block mx-auto mt-5 pt-2 pb-5 bg-dark">
+      <p class="text-center text-light">
         Tous droits réservés fabezio.fr
         <span>&copy;</span> 2019
       </p>
-      <ul class="nav navbar-light justify-content-center text-monospace text-uppercase">
+      <ul class="nav navbar-light text-light justify-content-center text-capitalize">
         <li class="nav-item" v-for="link in links" :key="link.route">
           <nuxt-link class="nav-link" :to="link.route">
-            <i :class="link.icon"></i>
+            <IconStack :faClass="link.icon" />
+
             <span class="route">{{link.name}}</span>
           </nuxt-link>
-          <!-- <a class="nav-link active" href="#">Active</a> -->
         </li>
+        <li class="nav-item">
+          <a
+               class="nav-link"
+                href="https://github.com/Fabezio/fabezio_nuxt"
+                target="_blank"
+              >
+                  <IconStack faClass="fab fa-github-alt" />
+                  <span class="route">
+                  Mon code source
 
-        <li class="nav-item">
-          <!-- <nuxt-link class="nav-link" to="/cgu">Conditions</nuxt-link> -->
-          <!-- <a class="nav-link" href="#">Link</a> -->
-          <a class="nav-link" href="https://github.com/Fabezio/fabezio_nuxt" target="_blank">
-            <i class="fab fa-github"></i>
-            Mon code source
-          </a>
-        </li>
-        <li class="nav-item">
-          <!-- <nuxt-link class="nav-link" to="/help">Aide</nuxt-link> -->
-          <!-- <a class="nav-link" href="#">Link</a> -->
-        </li>
-        <li class="nav-item">
-          <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+                  </span>
+                
+              </a>
         </li>
       </ul>
       <nav class="navbar justify-content-center"></nav>
@@ -36,29 +34,33 @@
 </template>
 
 <script>
+import IconStack from "@/components/IconStack";
 export default {
   name: "Footer",
+  components: {
+    IconStack
+  },
   data() {
     return {
       links: [
         {
           route: "/map",
-          name: "Plan du site",
+          name: "plan du site",
           icon: "far fa-map"
         },
         {
           route: "/cgu",
-          name: "Conditions",
+          name: "conditions",
           icon: "fas fa-file-contract"
         },
         {
           route: "/help",
-          name: "Aide",
+          name: "aide",
           icon: "fas fa-question"
         },
         {
           route: "/faq",
-          name: "Foire aux Questions",
+          name: "foire aux questions",
           icon: "fas fa-question-circle"
         }
       ]

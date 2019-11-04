@@ -1,9 +1,7 @@
 <template>
   <div>
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-dark text-uppercase text-monospace nav-pills m-0 py-1 px-2 fixed-top"
-    >
-      <nuxt-link class="navbar-brand" to="/">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-capitalize nav-pills fixed-top">
+      <nuxt-link class="navbar-brand home"  to="/">
         <img
           src="@/assets/favicon-32.png"
           class="logo"
@@ -29,10 +27,14 @@
       </button>
 
       <div class="collapse navbar-collapse" :class="{'show':collapse}" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto text-center px-1">
+        <ul class="navbar-nav">
           <li class="nav-item nav-pill" v-for="link in links" :key="link.route">
             <nuxt-link class="nav-link" :to="link.route">
-              <i :class="link.icon" class="mr-1"></i>
+              <IconStack :faClass="link.icon" />
+              <!-- <span class="fa-stack fa-1x fa-fw">
+                <i class="far fa-circle fa-stack-2x fa-fw teal-circle"></i>
+                <i :class="link.icon" class="fa-stack fa-fw fa-inverse"></i>
+              </span>-->
               <span class="route">{{link.name}}</span>
             </nuxt-link>
           </li>
@@ -54,32 +56,24 @@
               aria-haspopup="true"
               aria-expanded="false"
             >
-              <i class="fas fa-plus mr-1"></i>
-              Autres
+              <IconStack faClass="fas fa-plus" />Autres
             </a>
-            <div class="dropdown-menu" :class="{'show': dropdown}" aria-labelledby="navbarDropdown">
-              <nuxt-link class="dropdown-item" to="/about">
-                <i class="fas fa-comment-alt mr-1"></i> Qui je suis
-              </nuxt-link>
-              <nuxt-link class="dropdown-item" to="/contact">
-                <i class="fas fa-envelope mr-1"></i> Contactez-moi
-              </nuxt-link>
-              <a class="dropdown-item" href="https://github.com/Fabezio/fabezio_nuxt" target="_blank">
-                <hr class="my-1" />
-                <i class="fab fa-github mr-1"></i>
-                Mon code source
-              </a>
-              <!--
-                
-              <nuxt-link class="dropdown-item" to="/map">Plan du Site</nuxt-link>
-              <nuxt-link class="dropdown-item" to="/help">Aide</nuxt-link>
-              <nuxt-link class="dropdown-item" to="/faq">Foire aux Questions</nuxt-link>
-              <nuxt-link class="dropdown-item" to="/cgu">Conditions</nuxt-link>
-              -->
+            <div
+              class="dropdown-menu bg-dark text-dark"
+              :class="{'show': dropdown}"
+              aria-labelledby="navbarDropdown"
+            >
+              <div v-for="link in dropdownLinks" :key="link.route">
+                <nuxt-link class="nav-link" :to="link.route">
+                  <IconStack :faClass="link.icon" />
+
+                  <span class="route">{{link.name}}</span>
+                </nuxt-link>
+              </div>
+
+              <hr class="my-1" />
+              
             </div>
-          </li>
-          <li class="nav-item">
-            <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
           </li>
         </ul>
         <form class="form-inline my-2">
@@ -108,12 +102,17 @@
 </template>
 
 <script>
+import IconStack from "@/components/IconStack";
+// import NavLinks from '@/components/'
 // const menu = document.getElementById('navbarSupportedContent')
 // const button = document.getElementById('menuButton')
 // const dropdown = document.getElementById('navbarDropdown')
 // const menu = document.getElementById('navbarSupportedContent')
 export default {
   name: "Navbar",
+  components: {
+    IconStack
+  },
   data() {
     return {
       collapse: false,
@@ -123,40 +122,35 @@ export default {
       links: [
         {
           route: "/",
-          name: "Accueil",
+          name: "accueil",
           icon: "fas fa-home"
         },
         {
           route: "/services",
-          name: "Services",
+          name: "services",
           icon: "fas fa-user-tie"
         },
         {
           route: "/skills",
-          name: "Compétences",
+          name: "compétences",
           icon: "fas fa-user-graduate"
         },
         {
           route: "/portfolio",
-          name: "Portfolio",
+          name: "portfolio",
           icon: "fas fa-images"
-        },
-        {
-          route: "/contact",
-          name: "Contactez-moi",
-          icon: "fas fa-envelope"
-        },
-        {
-          route: "/about",
-          name: "A propos",
-          icon: "fas fa-comment-alt"
         }
       ],
       dropdownLinks: [
         {
-          route: "",
-          name: "",
-          icon: ""
+          route: "/contact",
+          name: "contactez-moi",
+          icon: "fas fa-envelope"
+        },
+        {
+          route: "/about",
+          name: "à propos",
+          icon: "fas fa-comment-alt"
         }
       ],
       logs: [
@@ -179,7 +173,7 @@ export default {
           color: "btn btn-warning",
           name: "Déconnexion",
           icon: "fas fa-sign-out-alt",
-          show: true
+          show: false
         }
       ]
     };

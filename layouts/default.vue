@@ -11,6 +11,7 @@
     </div>-->
     <nuxt class="py-5" />
     <Footer />
+
   </div>
 </template>
 
@@ -27,11 +28,17 @@ export default {
 </script>
 
 <style >
+.far, .fas {
+  margin: 0 !important;
+}
 .bg-transparent {
 background: rgba (0,0,0,0.25) !important;
 }
 .bg-teal {
   background: #008080;
+}
+.teal-circle {
+  color: #008080;
 }
 .bg-bluesky {
   background: skyblue;
@@ -67,22 +74,31 @@ background: rgba (0,0,0,0.25) !important;
   background: whitesmoke;
   padding: 7px;
 }
+.route{
+  color: silver !important;
 
+}
+.route:hover {
+  text-decoration: white underline !important;
+}
+
+
+
+.nuxt-link-exact-active:not(.home) {
+  background: #008080 !important;
+  color: darkslategrey !important; 
+}
   /*
+
+.fab.route:active,
+.fas.route:active,
+.nuxt-link-exact-active .this-fa,
 .navbar-brand {
   color: white !important;
   
 }
 .nav-link {
   color: silver !important;
-}
-.nav-link:hover.route {
-  text-decoration: white underline !important;
-}
-.nav-link:selected.route,
-.nav-link:active.route {
-  text-decoration: white underline !important;
-  color: white !important; 
 }
 */
   /* .nav-tabs :active {
