@@ -1,6 +1,6 @@
 <template>
   <div class>
-    <footer class="d-block mx-auto mt-5 pt-2 pb-5 bg-green text-dark">
+    <footer class="d-block mx-auto mt-5 py-3 bg-green text-dark">
       <p class="text-center ">
         Tous droits réservés - fabezio.fr
         <span>&copy;</span> 2019
@@ -70,3 +70,8 @@ export default {
 };
 </script>
 
+<style scoped>
+  footer {
+    z-index:10;
+  }
+</style>

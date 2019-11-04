@@ -1,5 +1,5 @@
 <template>
-  <div id="services" class="container my-5">
+  <div id="services" class="">
     <h1 class="text-center mb-4 header-shadow">Services</h1>
     <div class="card-deck my-4">
       <div v-for="service in services" :key="service.id" class="card silver-shadow">

@@ -1,5 +1,5 @@
 <template>
-  <div id="skills" class="container my-5">
+  <div id="skills" class="">
     <h1 class="text-center my-5 header-shadow">Formation</h1>
     <h2 class="mt-4 text-center header-shadow">Langages</h2>
     <div class="card-deck my-4">
@@ -20,7 +20,7 @@
 
     <div class="row mt-3">
       <p>
-        <em>* La version supportée dépend du navigateur</em>
+        <em>* La version supportée dépend du navigateur | ** Version 10 en LTS</em>
       </p>
     </div>
 
@@ -66,22 +66,22 @@ export default {
     return {
       languages: [
         {
-          class: "html fab fa-html5",
+        //   class: "html fab fa-html5",
           name: "HTML",
           version: 5,
           img:
-            "http://www.480interactive.com/wp-content/uploads/2016/05/02_1.png",
+            "https://juststickers.in/wp-content/uploads/2014/05/HTML5-Mark-Shape-Cut.png",
           desc: "Langage de balisage dédié au contenu du site"
         },
         {
-          class: "css fab fa-css3-alt",
+        //   class: "css fab fa-css3-alt",
           name: "CSS",
           version: 3,
-          img: "https://maxcdn.icons8.com/Share/icon/Logos/css31600.png",
+          img: "https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-css-3-512.png",
           desc: "Feuilles de style pour la mise en forme des pages"
         },
         {
-          class: "js fab fa-js-square",
+        //   class: "js fab fa-js-square",
           name: "JavaScript",
           img:
             "http://seeklogo.com/images/J/javascript-js-logo-2949701702-seeklogo.com.png?t=636356437130000000",
@@ -90,17 +90,17 @@ export default {
           desc: "Langage de programmation, dynamise l'application"
         },
         {
-          class: "node fab fa-node-js",
+        //   class: "node fab fa-node-js",
           name: "Node-JS",
           img:
-            "http://www.alex-arriaga.com/wp-content/uploads/2017/03/nodejs-150x150.png",
-          version: 12,
+            "https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/256/full/nodejslogo.png",
+          version: '12 **',
           desc: "Librairie JavaScript appliquée aux serveurs"
         }
       ],
       frameworks: [
         {
-          class: "bs fab fa-bootstrap",
+        //   class: "bs fab fa-bootstrap",
           name: "Bootstrap",
           version: 4,
           img:
@@ -108,28 +108,28 @@ export default {
           desc: "Framework CSS facilitant la mise en forme"
         },
         {
-          class: "js fab fa-python",
+        //   class: "js fab fa-python",
           name: "Bulma",
           version: 0.8,
           img: "https://jgthms.com/web-design-in-4-minutes/bulma.png",
           desc: "Framework semblable à BootStrap"
         },
         {
-          class: "react fab fa-react",
+        //   class: "react fab fa-react",
           name: "React",
           version: 16,
-          img: "http://builtwithreact.io/img/logo.svg",
+          img: "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png",
           desc: "Framework JS facilitant la création des sites web"
         },
         {
-          class: "vue fab fa-vuejs",
+        //   class: "vue fab fa-vuejs",
           name: "Vue JS",
           version: 2,
-          img: "https://isl.co/wp-content/uploads/2016/07/vue-logo.png",
+          img: "http://assets.stickpng.com/thumbs/58482acecef1014c0b5e4a1e.png",
           desc: "Semblable à React, en plus simple et complet"
         },
         {
-          class: "js fab fa-python",
+        //   class: "js fab fa-python",
           name: "Nuxt",
           version: 2,
           img:
@@ -139,7 +139,7 @@ export default {
       ],
       others: [
         {
-          class: "git fab fa-git-alt",
+        //   class: "git fab fa-git-alt",
           name: "Git",
           img:
             "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/768px-Git_icon.svg.png",
@@ -147,14 +147,14 @@ export default {
           desc: "Application servant à versionner ses codes"
         },
         {
-          class: "gh fab fa-github",
+        //   class: "gh fab fa-github",
           name: "gitHub",
           img: "http://pngimg.com/uploads/github/github_PNG40.png",
           // version: 1.22,
           desc: "Le cloud des codeurs, basé sur git"
         },
         {
-          class: "sass fab fa-sass",
+        //   class: "sass fab fa-sass",
           name: "Sass",
           version: 1.22,
           img:
@@ -162,7 +162,7 @@ export default {
           desc: "Framework servant à la personnalisation CSS"
         },
         {
-          class: "js fab fa-python",
+        //   class: "js fab fa-python",
           name: "Python",
           version: 3,
           img:
@@ -187,53 +187,5 @@ export default {
 </script>
 
 <style scoped>
-.html {
-  color: orangered;
-}
 
-.css {
-  color: blue;
-}
-
-.react {
-  color: #61daf4;
-}
-
-.bs {
-  color: #563d7c;
-}
-
-.sass {
-  color: #cf649a;
-}
-
-.js {
-  color: yellow;
-}
-
-.vue {
-  color: #41b883;
-}
-
-.node {
-  color: #689f63;
-}
-
-.db {
-  color: gray;
-}
-
-.angular {
-  color: darkred;
-}
-
-.php {
-  color: royalblue;
-}
-.git {
-  color: #f05133;
-}
-.gh {
-  color: #24292e;
-}
 </style>

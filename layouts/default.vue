@@ -9,7 +9,7 @@
           </a>
       </p>
     </div>-->
-    <nuxt class="py-5" />
+    <nuxt class="container my-5 pb-5" />
     <Footer />
 
   </div>
@@ -75,10 +75,7 @@ background: rgba (0,0,0,0.25) !important;
   background: whitesmoke;
   padding: 7px;
 }
-.route{
-  /* color: silver !important; */
 
-}
 .route:hover {
   text-decoration: darkslategrey underline !important;
 }

@@ -1,7 +1,7 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-green text-capitalize nav-pills fixed-top">
-      <nuxt-link class="navbar-brand home btn btn-warning" to="/">
+    <nav class="navbar navbar-expand-lg navbar-light bg-green text-capitalize nav-pills sticky-top">
+      <nuxt-link class="navbar-brand home btn btn-warning text-lowercase" to="/">
         <img
           src="@/assets/favicon-32.png"
           class="logo"

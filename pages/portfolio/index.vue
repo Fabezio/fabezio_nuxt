@@ -1,5 +1,5 @@
 <template>
-  <div id="portfolio" class="container my-5">
+  <div id="portfolio" class="">
     <h1 class="text-center mb-4 header-shadow">Portfolio</h1>
     <article>
       <h2 class="header-shadow mb-3">Sites créés en formation:</h2>
