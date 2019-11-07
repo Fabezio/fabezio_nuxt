@@ -15,7 +15,8 @@
     "bootstrap-vue": "^2.0.4",
     "font-awesome": "^4.7.0",
     "nuxt": "^2.0.0",
-    "vue-pdf": "^4.0.7"
+    "vue-pdf": "^4.0.7",
+    "vue2-filters": "^0.8.0-beta.2"
   },
   "devDependencies": {}
 }

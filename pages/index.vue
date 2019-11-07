@@ -23,11 +23,11 @@
           Si vous êtes ici, c'est que vous avez besoin d'un développeur web. J'ai envie de vous dire que vous êtes au bon endroit; ceci étant, vous avez forcément des réserves et avez besoin de preuves de mes compétences. C'est pourquoi tout est décrit ici.
         </p>
         <p>
-          Je vous invite à prendre le temps de visiter ce site, consulter <a href="https://github.com/Fabezio/fabezio_nuxt" target="_blank">ma page github</a>, afin de vous forger votre propre avis. N'hésitez pas à me faire un retour <a href="mailto:fabezio@outlook.fr">par mail</a> et à tester plus avant mes acquis, éventuellement des suggestions (c'est grâce aux erreurs qu'on apprend et progresse).
+          Je vous invite à prendre le temps de visiter ce site, consulter <a href="https://github.com/Fabezio/fabezio_nuxt" target="_blank">ma page github</a>, afin de vous forger votre propre avis. N'hésitez pas à me faire un retour <a href="mailto:fabezio@outlook.fr">par mail</a>, tester plus avant mes acquis, émettre des suggestions (c'est grâce aux erreurs qu'on apprend et progresse).
         </p>
         <p>Sur ce, je vous souhaite une bonne visite!
           <!-- <i class="far fa-smile-wink p-0 m-0 fa-2x text-warning"></i> -->
-          </p>
+        </p>
       </div>
     </div>
     <div class="container">

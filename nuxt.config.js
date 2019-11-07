@@ -43,6 +43,7 @@ env: {
 ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/vue-filters'
   ],
   /*
   ** Nuxt.js dev-modules

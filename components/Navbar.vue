@@ -1,7 +1,7 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-green text-capitalize nav-pills sticky-top">
-      <nuxt-link class="navbar-brand home btn btn-warning text-lowercase" to="/">
+    <nav class="navbar navbar-expand-lg navbar-light bg-emerald font-weight-light nav-pills sticky-top">
+      <nuxt-link class="navbar-brand home btn btn-gold text-lowercase" to="/">
         <img
           src="@/assets/favicon-32.png"
           class="logo"
@@ -35,7 +35,7 @@
                 <i class="far fa-circle fa-stack-2x fa-fw teal-circle"></i>
                 <i :class="link.icon" class="fa-stack fa-fw fa-inverse"></i>
               </span>-->
-              <span class="route">{{link.name}}</span>
+              <span class="route">{{link.name | capitalize({onlyFirstLetter: true}) }}</span>
             </nuxt-link>
           </li>
           <!-- <li class="nav-item active">
@@ -205,6 +205,10 @@ export default {
 
 <style >
   .navbar-brand {
-    text-shadow: .5px .5px black;
+    text-shadow: 2px 2px 2px grey;
+  }
+  .route {
+    
+    text-shadow: 1px 1px 1px grey;
   }
 </style>

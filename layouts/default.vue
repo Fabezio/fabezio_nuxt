@@ -28,7 +28,10 @@ export default {
 </script>
 
 <style >
-.bg-green {background: #50c878;}
+.btn-gold {background: gold;}
+.bg-green {background: green;}
+.bg-emerald {background: #50c878;}
+.bg-jade {background: #00a86b;}
 .far, .fas {
   margin: 0 !important;
 }
@@ -44,13 +47,13 @@ background: rgba (0,0,0,0.25) !important;
 .bg-bluesky {
   background: skyblue;
 }
-.card-img-top img {
+/* .card-img-top img {
   max-height: 213px !important;
   min-height: 213px !important;
   height: auto !important;
   max-width: 213px !important;
   width: auto !important;
-}
+} */
 .card {
   border: 1px solid aquamarine;
 }
@@ -67,8 +70,8 @@ background: rgba (0,0,0,0.25) !important;
 
 .card-footer {
   background: aquamarine;
-  color: #733;
-  /* text-shadow: 1px 1px black, -1px -1px black; */
+  color: #5c5c5c;
+  text-shadow: 0.5px 0.5px darkslateblue;
 }
 
 .card-img-top {
@@ -85,7 +88,7 @@ background: rgba (0,0,0,0.25) !important;
 }
 
 .nuxt-link-exact-active:not(.home) {
-  background: #008080 !important;
+  background: #00a86b !important;
   color: darkslategrey !important; 
 }
   /*

@@ -1,17 +1,17 @@
 <template>
   <div class>
-    <footer class="d-block mx-auto mt-5 py-3 bg-green text-dark">
+    <footer class="d-block mx-auto mt-5 py-3 bg-emerald text-dark font-weight-light ">
       <p class="text-center ">
         Tous droits réservés - fabezio.fr
         <span>&copy;</span> 2019
       </p>
-      <nav class="navbar navbar-expand-lg justify-content-center navbar-light text-capitalize nav-pills">
-      <ul class="navbar-nav  ">
+      <nav class="navbar navbar-expand-lg justify-content-center navbar-light nav-pills">
+      <ul class="navbar-nav">
         <li class="nav-item" v-for="link in links" :key="link.route">
           <nuxt-link class="nav-link" :to="link.route">
             <IconStack :faClass="link.icon" />
 
-            <span class="route">{{link.name}}</span>
+            <span class="route">{{link.name | capitalize({onlyFirstLetter: true}) }}</span>
           </nuxt-link>
         </li>
         <li class="nav-item">
@@ -66,12 +66,11 @@ export default {
         }
       ]
     };
-  }
+  },
+  
 };
 </script>
 
 <style scoped>
-  footer {
-    z-index:10;
-  }
+  
 </style>
