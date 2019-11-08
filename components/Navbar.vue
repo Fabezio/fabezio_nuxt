@@ -1,6 +1,8 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-emerald font-weight-light nav-pills sticky-top">
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-emerald font-weight-light nav-pills sticky-top"
+    >
       <nuxt-link class="navbar-brand home btn btn-gold text-lowercase" to="/">
         <img
           src="@/assets/favicon-32.png"
@@ -74,7 +76,7 @@
               <hr class="my-1" />
               
             </div>
-          </li> -->
+          </li>-->
         </ul>
         <form class="form-inline my-2">
           <!-- <div class="" v-for="log in logs" :key="log.name" > 
@@ -117,8 +119,8 @@ export default {
     return {
       collapse: false,
       dropdown: false,
-      signUser: true,
-      logUser: false,
+      // signUser: true,
+      // logUser: false,
       links: [
         {
           route: "/",
@@ -151,8 +153,7 @@ export default {
           icon: "fas fa-comment-alt"
         }
       ],
-      dropdownLinks: [
-      ],
+      dropdownLinks: [],
       logs: [
         {
           name: "subscribe",
@@ -197,18 +198,17 @@ export default {
       this.links = "active";
     },
     brandToHelp() {
-      return this.$router.push('/help')
+      return this.$router.push("/help");
     }
   }
 };
 </script >
 
 <style >
-  .navbar-brand {
-    text-shadow: 2px 2px 2px grey;
-  }
-  .route {
-    
-    text-shadow: 1px 1px 1px grey;
-  }
+.navbar-brand {
+  text-shadow: 2px 2px 2px grey;
+}
+.route {
+  text-shadow: 1px 1px 1px grey;
+}
 </style>
