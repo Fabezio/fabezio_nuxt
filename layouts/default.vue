@@ -11,7 +11,6 @@
     </div>-->
     <nuxt class="container my-5 pb-5" />
     <Footer />
-
   </div>
 </template>
 
@@ -28,15 +27,24 @@ export default {
 </script>
 
 <style >
-.btn-gold {background: gold;}
-.bg-green {background: green;}
-.bg-emerald {background: #50c878;}
-.bg-jade {background: #00a86b;}
-.far, .fas {
+.btn-gold {
+  background: gold;
+}
+.bg-green {
+  background: green;
+}
+.bg-emerald {
+  background: #50c878;
+}
+.bg-jade {
+  background: #00a86b;
+}
+.far,
+.fas {
   margin: 0 !important;
 }
 .bg-transparent {
-background: rgba (0,0,0,0.25) !important;
+  background: rgba (0, 0, 0, 0.25) !important;
 }
 .bg-teal {
   background: #008080;
@@ -89,9 +97,9 @@ background: rgba (0,0,0,0.25) !important;
 
 .nuxt-link-exact-active:not(.home) {
   background: #00a86b !important;
-  color: darkslategrey !important; 
+  color: darkslategrey !important;
 }
-  /*
+/*
 
 .fab.route:active,
 .fas.route:active,
@@ -104,7 +112,7 @@ background: rgba (0,0,0,0.25) !important;
   color: silver !important;
 }
 */
-  /* .nav-tabs :active {
+/* .nav-tabs :active {
     background: whitesmoke;
   } */
 </style>

@@ -5,23 +5,15 @@
         Tous droits réservés - fabezio.fr
         <span>&copy;</span> 2019
       </p>
-      <nav class="navbar navbar-expand-lg justify-content-center navbar-light nav-pills">
-        <ul class="navbar-nav">
-          <li class="nav-item" v-for="link in links" :key="link.route">
-            <nuxt-link class="nav-link" :to="link.route">
-              <IconStack :faClass="link.icon" />
-
-              <span class="route">{{link.name | capitalize({onlyFirstLetter: true}) }}</span>
-            </nuxt-link>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://github.com/Fabezio/fabezio_nuxt" target="_blank">
-              <IconStack faClass="fab fa-github-alt" />
-              <span class="route">Mon code source</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <b-nav type="dark" align="center" pills>
+        <!-- elements principaux -->
+        <b-nav-item class="nav-item nav-pill" v-for="link in links" :key="link.route">
+          <nuxt-link class="nav-link" :to="link.route">
+            <IconStack :faClass="link.icon" />
+            <span class="route">{{link.name | capitalize({onlyFirstLetter: true}) }}</span>
+          </nuxt-link>
+        </b-nav-item>
+      </b-nav>
     </footer>
   </div>
 </template>
