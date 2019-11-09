@@ -1,10 +1,6 @@
 <template>
   <div class>
     <footer class="d-block mx-auto mt-5 py-3 bg-emerald text-dark font-weight-light">
-      <p class="text-center">
-        Tous droits réservés - fabezio.fr
-        <span>&copy;</span> 2019
-      </p>
       <b-nav type="dark" align="center" pills>
         <!-- elements principaux -->
         <b-nav-item class="nav-item nav-pill" v-for="link in links" :key="link.route">
@@ -14,6 +10,10 @@
           </nuxt-link>
         </b-nav-item>
       </b-nav>
+      <p class="text-center">
+        Tous droits réservés - fabezio.fr
+        <span>&copy;</span> 2019
+      </p>
     </footer>
   </div>
 </template>

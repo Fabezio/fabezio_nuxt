@@ -19,7 +19,7 @@
       <b-collapse id="nav-collapse" is-nav>
         <!-- elements principaux -->
         <b-nav pills>
-          <b-nav-item class="nav-item nav-pill" v-for="link in links" :key="link.route">
+          <b-nav-item class="font-weight-light" v-for="link in links" :key="link.route">
             <nuxt-link class="nav-link" :to="link.route">
               <IconStack :faClass="link.icon" />
               <span class="route">{{link.name | capitalize({onlyFirstLetter: true}) }}</span>

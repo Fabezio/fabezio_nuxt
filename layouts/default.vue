@@ -33,6 +33,7 @@ export default {
 .bg-green {
   background: green;
 }
+
 .bg-emerald {
   background: #50c878;
 }
@@ -98,6 +99,9 @@ export default {
 .nuxt-link-exact-active:not(.home) {
   background: #00a86b !important;
   color: darkslategrey !important;
+}
+.nuxt-link-active .nav-icon {
+  color: whitesmoke !important;
 }
 /*
 
