@@ -27,11 +27,16 @@ export default {
 </script>
 
 <style >
+p {
+  text-align: justify;
+}
 .card img {
   width: 128px;
   height: 128px;
 }
 #my-card {
+  vertical-align: middle;
+  border: none;
   transition: none;
 }
 .btn-gold {

@@ -71,11 +71,11 @@ export default {
           name: "accueil",
           icon: "fas fa-home"
         },
-        {
-          route: "/services",
-          name: "services",
-          icon: "fas fa-user-tie"
-        },
+        // {
+        //   route: "/services",
+        //   name: "services",
+        //   icon: "fas fa-user-tie"
+        // },
         {
           route: "/skills",
           name: "compétences",
