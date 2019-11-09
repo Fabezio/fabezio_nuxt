@@ -7,29 +7,44 @@
       alt
       style="width: 100%"
     />
-    <div class="alert alert-info">
-      <div class="notification is-outlined has-text-centered">
-        <div class="container is-block">
-          <h1 class="title is-1 is-centered">fabezio.fr</h1>
-          <h2 class="subtitle is-2 is-center">Site CV de Développeur Web FrontEnd</h2>
-        </div>
-      </div>
+    <!-- banniere perso -->
+    <div class="bg-info">
+      <b-card
+        id="my-card"
+        bg-variant="info"
+        class="container"
+        img-src="@/assets/img/me.jpg"
+        img-left
+      >
+        <h1 class="title is-1 is-centered">fabezio.fr</h1>
+        <h2 class="subtitle is-2 is-center">Site CV de Développeur Web FrontEnd</h2>
+      </b-card>
     </div>
+
+    <!-- texte -->
     <div class="container my-5">
       <h2 class="text-center mb-4">Bienvenue sur ce site!</h2>
-    
-      <div class="text-justify ">
+
+      <div class="text-justify">
+        <p>Si vous êtes ici, c'est que vous avez besoin d'un développeur web. J'ai envie de vous dire que vous êtes au bon endroit; ceci étant, vous émettez certainement des réserves et avez besoin de preuves de mes compétences. C'est pourquoi tout est décrit ici.</p>
         <p>
-          Si vous êtes ici, c'est que vous avez besoin d'un développeur web. J'ai envie de vous dire que vous êtes au bon endroit; ceci étant, vous avez forcément des réserves et avez besoin de preuves de mes compétences. C'est pourquoi tout est décrit ici.
+          Je vous invite donc à prendre le temps de visiter ce site, consulter
+          <a
+            href="https://github.com/Fabezio/fabezio_nuxt"
+            target="_blank"
+          >ma page github</a>, afin de vous forger votre propre avis. N'hésitez pas à tester plus avant mes acquis, me faire un retour
+          <a
+            href="mailto:fabezio@outlook.fr"
+          >par mail</a> et/ou émettre des suggestions (c'est grâce aux erreurs qu'on apprend et progresse).
         </p>
         <p>
-          Je vous invite à prendre le temps de visiter ce site, consulter <a href="https://github.com/Fabezio/fabezio_nuxt" target="_blank">ma page github</a>, afin de vous forger votre propre avis. N'hésitez pas à me faire un retour <a href="mailto:fabezio@outlook.fr">par mail</a>, tester plus avant mes acquis, émettre des suggestions (c'est grâce aux erreurs qu'on apprend et progresse).
-        </p>
-        <p>Sur ce, je vous souhaite une bonne visite!
+          Sur ce, je vous souhaite une bonne visite!
           <!-- <i class="far fa-smile-wink p-0 m-0 fa-2x text-warning"></i> -->
         </p>
       </div>
     </div>
+
+    <!-- temporaire Lorem ipsum -->
     <div class="container">
       <div class="loremipsum text-justify">
         <h2 class="text-center">lorem ipsum</h2>
@@ -57,7 +72,7 @@
 // import Logo from '~/components/Logo.vue'
 
 export default {
-  layout: 'home',
+  layout: "home",
   components: {
     // Logo
   }

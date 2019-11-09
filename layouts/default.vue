@@ -27,6 +27,13 @@ export default {
 </script>
 
 <style >
+.card img {
+  width: 128px;
+  height: 128px;
+}
+#my-card {
+  transition: none;
+}
 .btn-gold {
   background: gold;
 }
