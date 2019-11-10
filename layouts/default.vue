@@ -26,11 +26,20 @@ export default {
 };
 </script>
 
-<style >
+<style lang="scss">
+@import "bootstrap/scss/variables";
+
+$theme-colors: (
+  primary: #50c878;
+);
+/* :root {
+  --primary: #50c878 !important;
+  --secondary: aquamarine;
+} */
 p {
   text-align: justify;
 }
-.card img {
+.media-img {
   width: 128px;
   height: 128px;
 }
@@ -48,6 +57,9 @@ p {
 
 .bg-emerald {
   background: #50c878;
+}
+.bg-turquoise {
+  background: aquamarine;
 }
 .bg-jade {
   background: #00a86b;

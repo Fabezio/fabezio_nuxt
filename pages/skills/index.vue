@@ -3,7 +3,19 @@
     <h1 class="text-center my-5 header-shadow">Formations</h1>
     <div v-for="code in codes" :key="code.title">
       <h2 class="mt-5 mb-4 text-center header-shadow">{{code.title}}</h2>
-      <div class="card-deck my-4">
+      <b-card-group columns>
+        <div v-for="card in code.content" :key="card.name">
+          <b-card class="bg-turquoise my-skills" :img-src="card.img" img-alt="Image" img-top>
+            <b-card-text class="text-center">{{card.name}}</b-card-text>
+            <!-- 
+            <template v-slot:footer>
+              <p>{{card.name}}</p>
+            </template>
+            -->
+          </b-card>
+        </div>
+      </b-card-group>
+      <!-- <div class="card-deck my-4">
         <div
           v-for="card in code.content"
           :key="card.name"
@@ -16,20 +28,20 @@
             </h6>
           </div>
           <div class="card-body">
-            <!-- <i :class="card.class" class="fa-10x mt-2 card-img-top " ></i> -->
+            <i :class="card.class" class="fa-10x mt-2 card-img-top " ></i>
             <p class="card-text">{{card.desc}}</p>
           </div>
           <h4 class="card-footer mb-0">{{card.name}}</h4>
         </div>
-      </div>
+      </div>-->
     </div>
 
-    <div class="row mt-3">
+    <!-- <div class="row mt-3">
       <p class="text-muted">
         * La version supportée dépend du navigateur
-        <!-- <br> ** Actuelle: 13 (à fins de test) -->
+        <br> ** Actuelle: 13 (à fins de test)
       </p>
-    </div>
+    </div>-->
   </div>
 </template>
 
@@ -161,4 +173,9 @@ export default {
 </script>
 
 <style scoped>
+img {
+  max-width: 576px;
+  max-height: calc(width);
+  /* height: 320px; */
+}
 </style>

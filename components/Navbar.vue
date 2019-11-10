@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" type="dark" class="bg-emerald" sticky>
+    <b-navbar toggleable="lg" type="dark" class="bg-primary">
       <b-navbar-brand>
         <nuxt-link class="btn btn-lg btn-gold home text-lowercase" to="/">
           <img

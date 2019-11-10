@@ -15,8 +15,8 @@
           class="align-self-start media-img border border-dark mr-3 rounded-lg float-left"
         />
         <div class="media-body vertical-middle">
-          <h1 class="title is-1 is-centered">fabezio.fr</h1>
-          <h2 class="subtitle is-2 is-center">Site CV de Développeur Web FrontEnd</h2>
+          <h1 class>fabezio.fr</h1>
+          <h2 class>Site CV de Développeur Web FrontEnd</h2>
         </div>
       </div>
     </div>

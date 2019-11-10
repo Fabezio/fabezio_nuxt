@@ -9,6 +9,10 @@
             <span class="route">{{link.name | capitalize({onlyFirstLetter: true}) }}</span>
           </nuxt-link>
         </b-nav-item>
+        <b-nav-item href="https://github.com/Fabezio/fabezio_nuxt" target="_blank">
+          <IconStack faClass="fab fa-github-alt" />
+          <span class="route">Mon code source</span>
+        </b-nav-item>
       </b-nav>
       <p class="text-center">
         Tous droits réservés - fabezio.fr
