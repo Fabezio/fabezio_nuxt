@@ -92,4 +92,4 @@ sw.*
 # sass
 *.map
 assets/styles/.sass-cache
-*.scssc
+assets/styles/.sass-cache/*.scssc
