@@ -88,3 +88,8 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# sass
+*.map
+assets/styles/.sass-cache
+*.scssc

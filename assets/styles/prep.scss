@@ -1,0 +1,11 @@
+$theme-colors: (
+    "primary": #50c878,
+    "secondary": aquamarine,
+    "success": lime,
+    "warning": gold,
+    "danger": darkred,
+);
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+

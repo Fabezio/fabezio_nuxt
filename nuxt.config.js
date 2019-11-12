@@ -35,6 +35,9 @@ export default {
  ** Global CSS
  */
 css: [
+  'bootstrap',
+  '~assets/styles/main.css',
+  '~assets/styles/prep.scss'
 ],
 env: {
   baseUrl: process.env.BASE_URL || 'https://localhost:3000',

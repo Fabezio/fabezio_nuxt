@@ -26,16 +26,8 @@ export default {
 };
 </script>
 
-<style lang="scss">
-@import "bootstrap/scss/variables";
+<style >
 
-$theme-colors: (
-  primary: #50c878;
-);
-/* :root {
-  --primary: #50c878 !important;
-  --secondary: aquamarine;
-} */
 p {
   text-align: justify;
 }
