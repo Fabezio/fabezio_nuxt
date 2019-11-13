@@ -1,5 +1,5 @@
 <template>
-  <div class>
+  <div >
     <div class="alert alert-danger">
       <h1 class="text-center">Oops!</h1>
       <h2 class="text-center">Problème de rendu... désolé!</h2>

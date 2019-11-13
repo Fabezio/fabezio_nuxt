@@ -2,7 +2,7 @@
   <div>
     <b-navbar toggleable="lg" type="dark" class="bg-primary">
       <b-navbar-brand>
-        <nuxt-link class="btn btn-lg btn-gold home text-lowercase" to="/">
+        <nuxt-link class="btn btn-lg btn-warning home text-lowercase" to="/">
           <img
             src="@/assets/favicon-32.png"
             class="logo"
@@ -154,6 +154,6 @@ export default {
 }
 .route {
   color: darkslategray;
-  text-shadow: 1px 1px 1px grey;
+  text-shadow: 1px 1px 1px grey; 
 }
 </style>

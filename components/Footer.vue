@@ -1,6 +1,6 @@
 <template>
   <div class>
-    <footer class="d-block mx-auto mt-5 py-3 bg-primary text-dark font-weight-light">
+    <footer class="d-block mx-auto py-3 bg-primary text-dark font-weight-light">
       <b-nav type="dark" align="center" pils>
         <!-- elements principaux -->
         <b-nav-item class="nav-item nav-pill" v-for="link in links" :key="link.route">
@@ -57,6 +57,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-</style>

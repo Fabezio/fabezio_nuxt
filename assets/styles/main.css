@@ -1,37 +1,58 @@
 .rounded-lg {
   border-radius: 1rem !important; }
 
-.nuxt-link-exact-active .fa-circle {
-  color: white; }
-.nuxt-link-exact-active :not(.home) {
-  background: #00a86b !important;
-  color: darkslategrey !important; }
-.nuxt-link-exact-active .nav-icon {
-  color: aquamarine !important; }
+.circle {
+  color: #008080; }
 
-p {
-  text-align: justify; }
+.nuxt-link-exact-active {
+  /*
+  .nav-icon {
+    background: #00a86b !important;
+    background-color: none;
+    color: aquamarine !important;
+  }
+  */ }
+  .nuxt-link-exact-active .circle {
+    color: white !important; }
+  .nuxt-link-exact-active:not(.home) {
+    color: darkslategrey !important; }
 
 .media-img {
-  width: 128px;
   height: 128px; }
+
+.loremipsum {
+  padding: 1rem 0;
+  margin: 1rem 0; }
+
+p {
+  text-align: justify;
+  text-indent: 1rem; }
+  p:first-letter {
+    font-size: 1.25rem; }
+  p a {
+    color: #00a86b; }
+    p a:hover {
+      text-decoration: underline #008080; }
 
 .card {
   border: 1px solid aquamarine;
   /* 
    */ }
-  .card :hover {
+  .card .media-img {
+    width: 128px;
+    height: 128px; }
+  .card:hover {
     transform: scale(1.15);
     transition: all 0.25s ease-in-out !important;
     cursor: pointer; }
 
-.card-footer {
   /* 
-  */
+.card-footer {
   background: aquamarine;
   color: #5c5c5c;
-  text-shadow: 0.5px 0.5px darkslateblue; }
-
+text-shadow: 0.5px 0.5px darkslateblue;
+}
+*/
 .card-img-top {
   background: whitesmoke;
   padding: 7px; }
@@ -81,10 +102,10 @@ p {
 /* .card-body {
     border-top: 1px solid aquamarine;
     border-bottom: 1px solid aquamarine;
-} */
-.teal-circle {
-  color: #008080; }
-
+    .teal-circle {
+      color: #008080;
+    }
+  } */
 /*
 
 .fab.route:active,

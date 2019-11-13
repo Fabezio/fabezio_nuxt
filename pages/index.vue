@@ -8,7 +8,7 @@
       style="width: 100%"
     />
     <!-- banniere perso -->
-    <div class="media rounded-lg rounded-bottom p-3 bg-emerald">
+    <div class="media rounded-lg rounded-bottom p-3 bg-primary">
       <div class="container">
         <img
           src="@/assets/img/me.jpg"
@@ -80,17 +80,5 @@ export default {
 </script>
 
 <style scoped>
-.media-img {
-  height: 128px;
-}
-.loremipsum {
-  padding: 1rem 0;
-  margin: 1rem 0;
-}
-p {
-  text-indent: 1rem;
-}
-p:first-letter {
-  font-size: 1.25rem;
-}
+
 </style>

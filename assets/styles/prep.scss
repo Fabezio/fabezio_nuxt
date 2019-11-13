@@ -9,44 +9,70 @@ $theme-colors: (
     border-radius: 1rem !important;
 }
 
-.nuxt-link-exact-active {
-    .fa-circle {
-        color: white;
-    }
-    
-  
-    :not(.home) {
-        background: #00a86b !important;
-        color: darkslategrey !important;
-    }
-    .nav-icon {
-        color: aquamarine !important;
-    }
+.circle {
+
+  color: #008080;
 }
-p {
-    text-align: justify;
+
+.nuxt-link-exact-active {
+  .circle {
+    color: white !important;
+  }
+  
+  &:not(.home) {
+    color: darkslategrey !important;
+  }
+  /*
+  .nav-icon {
+    background: #00a86b !important;
+    background-color: none;
+    color: aquamarine !important;
+  }
+  */
 }
 .media-img {
-width: 128px;
-height: 128px;
+  height: 128px;
+}
+.loremipsum {
+  padding: 1rem 0;
+  margin: 1rem 0;
+}
+p {
+  text-align: justify;
+  text-indent: 1rem;
+
+  &:first-letter {
+  font-size: 1.25rem;
+  }
+
+  a {
+    color: #00a86b;
+    &:hover {
+      text-decoration: underline #008080;
+    }
+  }
 }
 .card {
+  .media-img {
+  width: 128px;
+  height: 128px;
+  }
     border: 1px solid aquamarine;
     /* 
      */
-    :hover {
+    &:hover {
       transform: scale(1.15);
       transition: all 0.25s ease-in-out !important;
       cursor: pointer;
     }
   }
+  /* 
 .card-footer {
-/* 
-*/
-background: aquamarine;
-color: #5c5c5c;
+  background: aquamarine;
+  color: #5c5c5c;
 text-shadow: 0.5px 0.5px darkslateblue;
 }
+*/
 
 .card-img-top {
 background: whitesmoke;
@@ -100,10 +126,10 @@ padding: 7px;
 /* .card-body {
     border-top: 1px solid aquamarine;
     border-bottom: 1px solid aquamarine;
-} */
-.teal-circle {
-color: #008080;
-}
+    .teal-circle {
+      color: #008080;
+    }
+  } */
 
 
 

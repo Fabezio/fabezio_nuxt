@@ -9,7 +9,7 @@
           </a>
       </p>
     </div>-->
-    <nuxt class="container my-5 pb-5" />
+    <nuxt class="container my-5" />
     <Footer />
   </div>
 </template>
@@ -25,9 +25,3 @@ export default {
   }
 };
 </script>
-
-<style >
-
-
-  
-</style>

@@ -163,10 +163,5 @@ export default {
 </script>
 
 <style scoped>
-img {
-  /* 
-  max-width: 576px;
-  max-height: calc(width);
-  height: 320px; */
-}
+
 </style>
