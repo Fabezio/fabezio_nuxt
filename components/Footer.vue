@@ -1,7 +1,7 @@
 <template>
   <div class>
-    <footer class="d-block mx-auto mt-5 py-3 bg-emerald text-dark font-weight-light">
-      <b-nav type="dark" align="center" pills>
+    <footer class="d-block mx-auto mt-5 py-3 bg-primary text-dark font-weight-light">
+      <b-nav type="dark" align="center" pils>
         <!-- elements principaux -->
         <b-nav-item class="nav-item nav-pill" v-for="link in links" :key="link.route">
           <nuxt-link class="nav-link" :to="link.route">

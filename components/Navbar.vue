@@ -18,7 +18,7 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <!-- elements principaux -->
-        <b-nav pills>
+        <b-nav >
           <b-nav-item class="font-weight-light" v-for="link in links" :key="link.route">
             <nuxt-link class="nav-link" :to="link.route">
               <IconStack :faClass="link.icon" />

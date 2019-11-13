@@ -1,39 +1,29 @@
 <template>
-  <div id="skills" class>
+  <div id="skills" class> 
     <h1 class="text-center my-5 header-shadow">Formations</h1>
     <div v-for="code in codes" :key="code.title">
       <h2 class="mt-5 mb-4 text-center header-shadow">{{code.title}}</h2>
-      <b-card-group columns>
-        <div v-for="card in code.content" :key="card.name">
-          <b-card class="bg-turquoise my-skills" :img-src="card.img" img-alt="Image" img-top>
-            <b-card-text class="text-center">{{card.name}}</b-card-text>
-            <!-- 
-            <template v-slot:footer>
-              <p>{{card.name}}</p>
-            </template>
-            -->
-          </b-card>
-        </div>
-      </b-card-group>
-      <!-- <div class="card-deck my-4">
+      <div class="card-deck ">
+  
+      <!-- <div class="card-deck my-4"> -->
         <div
           v-for="card in code.content"
           :key="card.name"
-          class="card rounded-lg bg-transparent silver-shadow text-center"
+          class="card rounded-lg border-info text-center"
         >
-          <div class="card-header">
+          <div class="card-header bg-light">
             <img :src="card.img" alt class="card-top-img w-100" />
-            <h6 class="text-right text-muted mt-2 float-right">
-              <em>v{{card.version}}</em>
-            </h6>
+            <h5 class="text-right text-muted mt-2 float-right">
+              <small class="badge badge-pill badge-info border border-primary">v{{card.version}}</small>
+            </h5>
           </div>
-          <div class="card-body">
-            <i :class="card.class" class="fa-10x mt-2 card-img-top " ></i>
+          <div class="card-body border-top border-info">
+            
             <p class="card-text">{{card.desc}}</p>
           </div>
-          <h4 class="card-footer mb-0">{{card.name}}</h4>
+          <h4 class="card-footer bg-info mb-0">{{card.name}}</h4>
         </div>
-      </div>-->
+      </div>
     </div>
 
     <!-- <div class="row mt-3">
@@ -94,13 +84,13 @@ export default {
               version: 4.3,
               img:
                 "http://www.dxpdance.com.au/wp-content/uploads/2016/03/bootstrap-logo.jpg",
-              desc: "Framework CSS facilitant la mise en forme"
+              desc: "Framework CSS facilitant la mise en forme, bibliothèque Sass"
             },
             {
               name: "Bulma",
               version: 0.8,
               img: "https://jgthms.com/web-design-in-4-minutes/bulma.png",
-              desc: "Framework semblable à BootStrap"
+              desc: "Framework semblable à BootStrap, bibliothèque Sass"
             },
             {
               name: "Sass",
@@ -148,7 +138,7 @@ export default {
               desc: "Application servant à versionner ses codes"
             },
             {
-              name: "gitHub",
+              name: "GitHub",
               img: "http://pngimg.com/uploads/github/github_PNG40.png",
               version: 2.23,
               desc: "Le cloud des codeurs, basé sur git"
@@ -174,8 +164,9 @@ export default {
 
 <style scoped>
 img {
+  /* 
   max-width: 576px;
   max-height: calc(width);
-  /* height: 320px; */
+  height: 320px; */
 }
 </style>
