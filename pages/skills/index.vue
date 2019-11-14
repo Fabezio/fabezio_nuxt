@@ -63,7 +63,7 @@ export default {
               img:
                 "http://seeklogo.com/images/J/javascript-js-logo-2949701702-seeklogo.com.png?t=636356437130000000",
 
-              version: "1.8 *",
+              version: "1.8*",
               desc: "Langage de programmation, dynamise l'application"
             }
             // {
