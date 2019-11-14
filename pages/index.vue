@@ -1,5 +1,7 @@
 <template>
   <div class>
+
+    <!-- 
     <img
       id="logo"
       src="@/assets/img/bannière metal luisant.png"
@@ -7,8 +9,8 @@
       alt
       style="width: 100%"
     />
-    <!-- banniere perso -->
-    <div class="media rounded-lg rounded-bottom p-3 bg-primary">
+      banniere perso -->
+    <div class="media border-top border-secondary p-3 bg-primary">
       <div class="container">
         <img
           src="@/assets/img/me.jpg"
@@ -44,7 +46,7 @@
       </div>
     </div>
 
-    <!-- temporaire Lorem ipsum -->
+    <!-- temporaire Lorem ipsum
     <div class="container">
       <div class="loremipsum text-justify">
         <h2 class="text-center">lorem ipsum</h2>
@@ -65,6 +67,7 @@
         <p>Cupidatat consectetur Lorem duis in irure cillum. Minim nostrud ea ea consequat labore cillum aliqua occaecat culpa incididunt ex amet non. Magna eu laborum eiusmod deserunt laboris dolor incididunt amet anim. Excepteur minim fugiat laborum eu laborum consectetur nulla Lorem pariatur consectetur exercitation elit do. Quis cillum ut tempor Lorem nostrud sunt ut anim consequat consequat magna ut. Occaecat adipisicing ullamco voluptate eiusmod cillum. Laboris ea sit nisi tempor velit incididunt exercitation sit anim labore consectetur magna.</p>
       </div>
     </div>
+     -->
   </div>
 </template>
 
