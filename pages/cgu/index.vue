@@ -4,7 +4,7 @@
         <article class="text-justify">
             <p>Le présent document a pour objet de définir les modalités et conditions dans lesquelles d’une part, l’association <span class="society">{{society}}</span> , ci-après dénommé <span class="society">{{society}}</span>, met à la disposition de ses utilisateurs le site, et les services disponibles sur le site et d’autre part, la manière par laquelle l’utilisateur accède au site et utilise ses services. </p>
             <p>Toute connexion au site est subordonnée au respect des présentes conditions. 
-            <br>Pour l’utilisateur, le simple accès au site de <span class="society">{{society}}</span> à l’adresse URL suivante: <span class="web text-uppercase">{{web}}</span> implique l’acceptation de l’ensemble des conditions décrites ci-après. </p>
+            <br>Pour l’utilisateur, le simple accès au site de <span class="society">{{society}}</span> à l’adresse URL suivante: <span class="web text-lowercase">{{web}}</span> implique l’acceptation de l’ensemble des conditions décrites ci-après. </p>
         </article>
         <h3 class="subtitle is-3 ">Propriété intellectuelle</h3>
         <article class="text-justify">
@@ -13,11 +13,11 @@
         </article>
         <h3 class="subtitle is-3 ">Liens hypertextes</h3>
         <article class="text-justify">
-            <p>Le site <span class="web text-uppercase">{{web}}</span> peut contenir des liens hypertextes vers d’autres sites présents sur le Il est possible de créer un lien vers la page de présentation de ce site sans autorisation expresse de <span class="society">{{society}}</span>. Aucune autorisation ou demande d’information préalable ne peut être exigée par <span class="editor text-uppercase">{{editor}}<span>{{trade}}</span></span> à l’égard d’un site qui souhaite établir un lien vers le site de <span class="editor text-uppercase">{{editor}}<span>{{trade}}</span></span>. Il convient toutefois d’afficher ce site dans une nouvelle fenêtre du navigateur. Cependant, <span class="society">{{society}}</span> se réserve le droit de demander la suppression d’un lien qu’il estime non conforme à l’objet du site <span class="web text-uppercase">{{web}}</span>  </p>
+            <p>Le site <span class="web text-lowercase">{{web}}</span> peut contenir des liens hypertextes vers d’autres sites présents sur le Il est possible de créer un lien vers la page de présentation de ce site sans autorisation expresse de <span class="society">{{society}}</span>. Aucune autorisation ou demande d’information préalable ne peut être exigée par <span class="editor text-lowercase">{{editor}}<span v-html="trade"></span></span> à l’égard d’un site qui souhaite établir un lien vers le site de <span class="editor text-lowercase">{{editor}}<span v-html="trade"></span></span>. Il convient toutefois d’afficher ce site dans une nouvelle fenêtre du navigateur. Cependant, <span class="society">{{society}}</span> se réserve le droit de demander la suppression d’un lien qu’il estime non conforme à l’objet du site <span class="web text-lowercase">{{web}}</span>  </p>
             
             <p></p>
         </article>
-        <h3 class="subtitle is-3 ">Responsabilité de <span class="editor text-uppercase">{{editor}}<span>{{trade}}</span></span> </h3>
+        <h3 class="subtitle is-3 ">Responsabilité de <span class="editor text-lowercase">{{editor}}<span v-html="trade"></span></span> </h3>
         <article class="text-justify">
             <p>Les informations et/ou documents figurant sur ce site et/ou accessibles par ce site proviennent de sources considérées comme étant fiables. 
             <br>Toutefois, ces informations et/ou documents sont susceptibles de contenir des inexactitudes techniques et des erreurs typographiques. 
@@ -31,16 +31,16 @@
             
         <h3 class="subtitle is-3 ">Accès au site </h3>
         <article class="text-justify">
-            <p><span class="editor text-uppercase">{{editor}}<span>{{trade}}</span></span> s’efforce de permettre l’accès au site 24 heures sur 24, 7 jours sur 7, sauf en cas de force majeure ou d’un événement hors du contrôle de <span class="society">{{society}}</span>, et sous réserve des éventuelles pannes et interventions de maintenance nécessaires au bon fonctionnement du site et des services. 
+            <p><span class="editor text-lowercase">{{editor}}<span v-html="trade"></span></span> s’efforce de permettre l’accès au site 24 heures sur 24, 7 jours sur 7, sauf en cas de force majeure ou d’un événement hors du contrôle de <span class="society">{{society}}</span>, et sous réserve des éventuelles pannes et interventions de maintenance nécessaires au bon fonctionnement du site et des services. 
             <br>Par conséquent, <span class="society">{{society}}</span> ne peut garantir une disponibilité du site et/ou des services, une fiabilité des transmissions et des performances en terme de temps de réponse ou de qualité. Il n’est prévu aucune assistance technique vis à vis de l’utilisateur que ce soit par des moyens électronique ou téléphonique. 
-            <br>La responsabilité de <span class="editor text-uppercase">{{editor}}<span>{{trade}}</span></span> ne saurait être engagée en cas d’impossibilité d’accès à ce site et/ou d’utilisation des services. 
+            <br>La responsabilité de <span class="editor text-lowercase">{{editor}}<span v-html="trade"></span></span> ne saurait être engagée en cas d’impossibilité d’accès à ce site et/ou d’utilisation des services. 
             <br>Par ailleurs, <span class="society">{{society}}</span> peut être amené à interrompre le site ou une partie des services, à tout moment sans préavis, le tout sans droit à indemnités. L’utilisateur reconnaît et accepte que <span class="society">{{society}}</span> ne soit pas responsable des interruptions, et des conséquences qui peuvent en découler pour l’utilisateur ou tout tiers. </p>
             <p></p>
         </article>
 
         <h3 class="subtitle is-3 ">Modification des conditions d’utilisation </h3>
         <article class="text-justify">
-            <p><span class="editor text-uppercase">{{editor}}<span>{{trade}}</span></span> se réserve la possibilité de modifier, à tout moment et sans préavis, les présentes conditions d’utilisation afin de les adapter aux évolutions du site et/ou de son exploitation. </p>
+            <p><span class="editor text-lowercase">{{editor}}<span v-html="trade"></span></span> se réserve la possibilité de modifier, à tout moment et sans préavis, les présentes conditions d’utilisation afin de les adapter aux évolutions du site et/ou de son exploitation. </p>
             <p></p>
         </article>
 
@@ -48,7 +48,7 @@
         <article class="text-justify">
             <p>L’utilisateur déclare accepter les caractéristiques et les limites d’Internet, et notamment reconnaît que : 
             <br><span class="society">{{society}}</span> n’assume aucune responsabilité sur les services accessibles par Internet et n’exerce aucun contrôle de quelque forme que ce soit sur la nature et les caractéristiques des données qui pourraient transiter par l’intermédiaire de son centre serveur. 
-            <br>L’utilisateur reconnaît que les données circulant sur Internet ne sont pas protégées notamment contre les détournements éventuels. La présence du logo <span class="web text-uppercase">{{web}}</span> institue une présomption simple de validité. La communication de toute information jugée par l’utilisateur de nature sensible ou confidentielle se fait à ses risques et périls. 
+            <br>L’utilisateur reconnaît que les données circulant sur Internet ne sont pas protégées notamment contre les détournements éventuels. La présence du logo <span class="web text-lowercase">{{web}}</span> institue une présomption simple de validité. La communication de toute information jugée par l’utilisateur de nature sensible ou confidentielle se fait à ses risques et périls. 
             <br>L’utilisateur reconnaît que les données circulant sur Internet peuvent être réglementées en termes d’usage ou être protégées par un droit de propriété. 
             <br>L’utilisateur est seul responsable de l’usage des données qu’il consulte, interroge et transfère sur Internet. 
             <br>L’utilisateur reconnaît que <span class="society">{{society}}</span> ne dispose d’aucun moyen de contrôle sur le contenu des services accessibles sur Internet. </p>
